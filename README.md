@@ -1,4 +1,4 @@
-SkillShare — Learning Management System
+# SkillShare — Learning Management System
 
  A full-stack Learning Management System (LMS) built with Spring Boot, React, and PostgreSQL featuring role-based access control, JWT authentication, and a responsive Material UI interface.
 
@@ -81,13 +81,13 @@ Key highlights:
 - Dev/Prod profile:- switching via Maven profiles
 
 ## Architecture & Design
-
+```
 skill-share/
 ├── backend/    ← Spring Boot 3 REST API
 └── frontend/   ← React 18 + Vite SPA
-
+```
 ### Backend Layered Architecture
-
+```
 HTTP Request
      │
      ▼
@@ -109,7 +109,7 @@ HTTP Request
 ┌─────────────┐
 │   Entity    │  ← JPA-mapped domain objects
 └─────────────┘
-
+```
 
 ## Getting Started
 
@@ -120,13 +120,13 @@ HTTP Request
 - Node.js 18+ & npm
 - PostgreSQL (running locally on port `5432`)
 
- 1. Clone the Repository
-
+### 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/skill-share.git
 cd skill-share
-
- 2. Backend Setup
-
+```
+### 2. Backend Setup
+```bash
 cd backend
 
 # Create the PostgreSQL database (default: testing2)
@@ -134,15 +134,15 @@ psql -U postgres -c "CREATE DATABASE testing2;"
 
 # Run with the dev profile (default)
 mvn spring-boot:run -Pdev
-
+```
 The backend starts at `http://localhost:8080`
 
- 3. Frontend Setup
-
+### 3. Frontend Setup
+```bash
 cd frontend
 npm install
 npm run dev
-
+```
 The frontend starts at `http://localhost:5173` and proxies API calls to `http://localhost:8080`.
 
 ## Project Structure
