@@ -97,10 +97,9 @@
 			<id>dev</id>
 			<properties>
 				<activatedProperties>dev</activatedProperties>
-<!--				<jdbc.url>abc</jdbc.url>-->
 				<jdbc.url>jdbc:postgresql://localhost:5432/testing2</jdbc.url>
-				<jdbc.username>kajal</jdbc.username>
-				<jdbc.password>Kajal@123</jdbc.password>
+				<jdbc.username>postgres</jdbc.username>
+				<jdbc.password>postgres</jdbc.password>
 				<jdbc.driver>org.postgresql.Driver</jdbc.driver>
 				<jdbc.port>8080</jdbc.port>
 			</properties>

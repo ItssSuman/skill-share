@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Application config (contains secrets)
+application.properties
+application-*.properties
+
