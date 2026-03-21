@@ -146,7 +146,7 @@ npm run dev
 The frontend starts at `http://localhost:5173` and proxies API calls to `http://localhost:8080`.
 
 ## Project Structure
-
+```
 skill-share/
 │
 ├── backend/
@@ -175,4 +175,4 @@ skill-share/
         │   └── studentDashboard/ # Student view
         ├── App.jsx           # Root component with routes
         └── main.jsx          # React entry point`
-
+```
